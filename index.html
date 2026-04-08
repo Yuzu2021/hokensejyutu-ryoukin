@@ -9,15 +9,40 @@
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  background: #f9f9f9;
+  background: #fff8f5;
+  color: #333;
 }
 
 /* ヘッダー */
 header {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
   background: #000;
   color: #fff;
-  text-align: center;
-  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #ffcc99;
+}
+
+.insta-header {
+  width: 28px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
 }
 
 /* セクション */
@@ -27,8 +52,9 @@ header {
 }
 
 .section h2 {
-  color: #ff9900;
+  color: #ff6600;
   margin-bottom: 20px;
+  font-size: 22px;
 }
 
 /* 平均料金 */
@@ -39,6 +65,13 @@ header {
   font-weight: bold;
   margin-bottom: 25px;
   display: inline-block;
+  line-height: 1.5;
+}
+
+.average span {
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* 料金ボックス */
@@ -48,13 +81,14 @@ header {
   padding: 20px;
   border-radius: 12px;
   max-width: 400px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .price-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #ff6600;
 }
 
 .price-item {
@@ -62,11 +96,9 @@ header {
   margin: 8px 0;
 }
 
-/* 強調 */
 .highlight {
   color: #ff6600;
   font-weight: bold;
-  font-size: 20px;
 }
 
 /* 注意書き */
@@ -89,58 +121,49 @@ footer {
 <body>
 
 <header>
-<header style="justify-content: center; position: relative;">
-  
-  <h1 style="margin:0; font-size:18px;">
-    <a href="https://yuzu2021.github.io/lp-seikotsu-0401page/#faq" 
-       style="color:#fff; text-decoration:none;">
+  <h1>
+    <a href="https://yuzu2021.github.io/lp-seikotsu-0401page/#faq">
       🏥にしむら整骨院🏥
     </a>
   </h1>
-
-  <!-- Instagramは右固定にする -->
-  <a href="https://www.instagram.com/gym_seikotuin" 
-     style="position:absolute; right:15px;">
+  <a href="https://www.instagram.com/gym_seikotuin">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="insta-header">
   </a>
-<p>【保険治療料金表】</p>
+  <p>【保険治療料金表】</p>
 </header>
 
 <section class="section">
-<h2>料金のご案内</h2>
+  <h2>料金のご案内</h2>
 
-<div class="average">
-ほとんどの方が<br>
-<span style="color:#ff6600; font-size:20px;">200円〜500円程度</span><br>
-で通院されています
-</div>
+  <div class="average">
+    ほとんどの方が<br>
+    <span>200円〜500円程度</span><br>
+    で通院されています
+  </div>
 
-<div class="price-box">
-<div class="price-title">1割ご負担</div>
-<div class="price-item">初診料 <span class="highlight">390円</span></div>
-<div class="price-item">3回目以降 <span class="highlight">160〜200円</span></div>
-</div>
+  <div class="price-box">
+    <div class="price-title">1割ご負担</div>
+    <div class="price-item">初診料 <span class="highlight">390円</span></div>
+    <div class="price-item">3回目以降 <span class="highlight">160〜200円</span></div>
+  </div>
 
-<div class="price-box">
-<div class="price-title">2割ご負担</div>
-<div class="price-item">初診料 <span class="highlight">790円</span></div>
-<div class="price-item">3回目以降 <span class="highlight">320〜500円</span></div>
-</div>
+  <div class="price-box">
+    <div class="price-title">2割ご負担</div>
+    <div class="price-item">初診料 <span class="highlight">790円</span></div>
+    <div class="price-item">3回目以降 <span class="highlight">320〜500円</span></div>
+  </div>
 
-<div class="price-box">
-<div class="price-title">3割ご負担</div>
-<div class="price-item">初診料 <span class="highlight">1,180円</span></div>
-<div class="price-item">3回目以降 <span class="highlight">480〜700円</span></div>
-</div>
+  <div class="price-box">
+    <div class="price-title">3割ご負担</div>
+    <div class="price-item">初診料 <span class="highlight">1,180円</span></div>
+    <div class="price-item">3回目以降 <span class="highlight">480〜700円</span></div>
+  </div>
 
-<p class="note">
-※症状や施術内容により金額が前後する場合があります
-</p>
-
+  <p class="note">※症状や施術内容により金額が前後する場合があります</p>
 </section>
 
 <footer>
-<p>© にしむら整骨院</p>
+  <p>© にしむら整骨院</p>
 </footer>
 
 </body>
